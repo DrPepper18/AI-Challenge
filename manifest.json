@@ -1,0 +1,34 @@
+{
+    "name": "Сканер труб",
+    "short_name": "Сканер",
+    "description": "МИСИС: уже не школьники. Александр Крылов и Дмитрий Бусыгин", 
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "assets/scanner.png",
+            "type": "image/png", 
+            "sizes": "225x225",
+            "for,-factor": "wide"
+        }
+    ],
+    "screenshots": [    
+        {
+            "src": "assets/screenshot1.png",
+            "sizes": "1919x913",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Application"
+        },
+        {
+            "src": "assets/screenshot1.png",
+            "sizes": "1919x913",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Application"
+        }
+    ]
+}

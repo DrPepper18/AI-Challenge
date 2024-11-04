@@ -1,0 +1,94 @@
+.App { width: 100% }
+body { margin: 0 }
+h1, h2, h3, h4, p { font-family: 'Trebuchet MS' }
+h1 { color: white }
+p { font-size: 40px }
+main { width: 100% }
+
+canvas {
+    border-radius: 20px;
+    display:block;
+    border: 1px solid black;
+    margin-inline: auto;
+    margin-top:10px;
+    width: 500px;
+    height: 500px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(63, 63, 122);
+    padding-inline: 10px;
+    box-sizing: border-box;
+}
+#button {
+    border-radius: 20px;
+    margin-inline: auto;
+    margin-top: 50px;
+    padding: 10px;
+    min-width: 500px;
+    width: fit-content;
+    min-height: 400px;
+    background-color: lightgray;
+}
+#uploadInput {
+    margin: 10px; 
+    font-size: 40px;
+    width: 500px;
+}
+#settings {
+    border-radius: 20px;
+    background-color: aliceblue; 
+    margin: 10px 10px 0 0; 
+    padding: 20px;
+    margin-inline: auto; 
+    box-sizing: border-box;
+}
+
+#target {
+    width: 100%;
+    height: auto;
+}
+#result {
+    font-size: 40px;
+    text-align: center;
+}
+#recent_counts {
+    border-radius: 20px;
+    background-color: lightgray;
+    width: 500px;
+    margin-inline: auto;
+    padding: 10px;
+    text-align: left;
+    display: none;
+}
+#info > div {
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+
+input[type="checkbox"] {
+    transform: scale(3); /* Adjust the scale factor to make it larger */
+    margin-left: 30px;
+}
+input[type="range"] {
+    transform: scale(3); /* Adjust the scale factor to make it larger */
+    margin-left: 40%;
+}
+@media (min-width: 1000px) {
+    canvas {
+        width: 300px;
+        height: 300px;
+    }
+    #button { display: flex }
+    #uploadInput { width: 300px }
+    p, #uploadInput { font-size: 20px }
+    input[type="checkbox"], input[type="range"] { transform: scale(2) }
+    input[type="range"] { margin-left: 30% }
+}

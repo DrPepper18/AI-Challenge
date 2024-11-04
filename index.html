@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Сканер труб</title>
+        <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="src/assets/scanner.png">
+    </head>
+    <body>
+        <div class="App">
+            <header>
+                <img src="src/assets/scanner.png" style="height: 80px; border-radius: 10px;"/>
+                <h1>Сканер труб</h1>
+                <img src="src/assets/severstal.jpg" alt="icon" style="height: 90px; width: auto" />
+            </header>
+            <main>
+                <div id="button">
+                    <div>
+                        <canvas></canvas>
+                        <input id="uploadInput" type="file"/>
+                    </div>
+                    <div id="settings">
+                        <p>Неуверенность </p>
+                        <input id="conf-value" type="range" min="0" max="100" step="5" value="50"> 
+                        <p>Монохромный фильтр<input type="checkbox" id="checkbox-filter"/></p>
+                        <p>Улучшение резкости<input type="checkbox" id="checkbox-sharpen"/></p>
+                        <p>Улучшение изображения<input type="checkbox" id="checkbox-enhance"/></p>
+                    </div>
+                    
+                </div>
+                <h2 id="result"></h2>
+                <div id="recent_counts">
+                    <h3>Недавние результаты</h3>
+                    <div id="info"></div>
+                </div>
+            </main>
+        </div>
+        <script src="script(right-code).js"></script>
+    </body>
+</html>
